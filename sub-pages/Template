@@ -5,11 +5,3 @@
 <p>Tekst</p>
 <p>Tekst</p>
 <p>Tekst</p>
-
-<div class="articleRight">
-  <div class="articleRightInner">
-    <img src="img/fig.jpg" alt="alternativ tekst" />
-  </div>
-  
-  Tekst under figur
-</div>
