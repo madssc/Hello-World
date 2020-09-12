@@ -1,0 +1,15 @@
+<!-- Skabelon til en sang -->
+
+<h2>Overskrift</h2>
+<h3>Evt. underoverskrift</h3>
+<p>Tekst</p>
+<p>Tekst</p>
+<p>Tekst</p>
+
+<div class="articleRight">
+  <div class="articleRightInner">
+    <img src="img/fig.jpg" alt="alternativ tekst" />
+  </div>
+  
+  Tekst under figur
+</div>
