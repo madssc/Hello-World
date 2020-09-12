@@ -22,25 +22,28 @@
 }());
 
 // Place any jQuery/helper plugins in here.
-
 $(document).ready(function(){
 	$(".contentsPanel").each(function() {                
 		$(this).prepend('<div class="hidePanel">[hide]</div><div class="showPanel">[show]</div>');
 	});
 	
-	
-    $(".hidePanel").click(function(){
+	$(".hidePanel").click(function(){
 		$( this ).siblings('ul').hide( 150, function() { 
 			$(this).parent().addClass('minimizedPanel');
 		});
-    });
-    $(".showPanel").click(function(){
+    	});
+
+	$(".showPanel").click(function(){
 		$( this ).siblings('ul').show( 150, function() { 
 			$(this).parent().removeClass('minimizedPanel');
 		});
-    });
-	
-	
+	    });
+	});
+
+$(function(){
+	var includes = $('[data-include]');
+	jQuery.each(includes, function(){
+      	var file = 'views/' + $(this).data('include') + '.html';
+      	$(this).load(file);
+    	});
 });
-
-
